@@ -1,7 +1,5 @@
-import {model} from './model'
-import {Site} from './classes/site'
 import './styles/main.css'
+import {model} from "./model";
+import {App} from "./classes/app";
 
-const site = new Site('#site')
-
-site.render(model)
+new App(model)
