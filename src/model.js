@@ -1,5 +1,5 @@
 import image from './assets/image.jpg'
-import {Block} from './classes/blocks'
+import {TextBlock, ColumnsBlock, TitleBlock, ImageBlock} from './classes/blocks'
 
 export const model = [
     // {
@@ -16,7 +16,7 @@ export const model = [
     //         }
     //     }
     // },
-    new Block('title', 'Конструктор сайтов на чистом JavaScript', {
+    new TitleBlock('Конструктор сайтов на чистом JavaScript', {
         tag: 'h2',
         styles: {
             background: 'linear-gradient(to right, #ff0099, #493240)',
@@ -36,7 +36,7 @@ export const model = [
     //         }
     //     }
     // },
-    new Block('text', 'Этот текст очень важен, поэтому он здесь', {
+    new TextBlock('Этот текст очень важен, поэтому он здесь', {
             styles: {
                 background: 'linear-gradient(to left, #f2994a, #f2c94c)',
                 padding: '1rem',
@@ -59,7 +59,7 @@ export const model = [
     //         alt: 'Website picture'
     //     }
     // },
-    new Block('image', image, {
+    new ImageBlock(image, {
         styles: {
             padding: '2rem 0',
             display: 'flex',
@@ -87,7 +87,7 @@ export const model = [
     //         }
     //     }
     // },
-    new Block('columns', [
+    new ColumnsBlock([
         'Приложение на чистом JavaScript',
         'Свой конструктор сайтов',
         'Это очень крутой конструктор',
