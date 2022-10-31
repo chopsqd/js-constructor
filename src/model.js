@@ -1,3 +1,5 @@
+import image from './assets/image.jpg'
+
 export const model = [
     {type: 'title', value: 'Hello from JS'},
     {type: 'text', value: 'Some text'},
@@ -8,5 +10,5 @@ export const model = [
             'lorem3333333333333330',
         ]
     },
-    { type: 'image', value: './assets/image.jpg'}
+    { type: 'image', value: image}
 ]
